@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { ArrowDown, ArrowRight, CalendarDays, ChevronLeft, ChevronRight, Clock3, Instagram, MapPin, Menu, Phone, Star, X } from 'lucide-react'
+import { ArrowDown, ArrowRight, CalendarDays, ChevronLeft, ChevronRight, Clock3, MapPin, Menu, Phone, Star, X } from 'lucide-react'
 
 const menuItems = [
   { name:'Smoked Paneer Tikka', category:'Starters', price:'₹495', description:'Charred paneer, smoked paprika, mint chutney', image:'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=85' },
@@ -114,7 +114,7 @@ function App(){
       </section>
     </main>
 
-    <footer><div className="footer-brand">SAFFRON <i>&</i> STONE</div><p>Modern Indian dining, Fort · Mumbai</p><div className="social"><Instagram size={18}/><span>Follow the table</span></div><small>© 2026 Saffron & Stone</small></footer>
+    <footer><div className="footer-brand">SAFFRON <i>&</i> STONE</div><p>Modern Indian dining, Fort · Mumbai</p><div className="social"><span className="social-icon" aria-hidden="true">◎</span><span>Follow the table</span></div><small>© 2026 Saffron & Stone</small></footer>
 
     {lightbox!==null && <div className="lightbox" role="dialog" aria-modal="true" onClick={()=>setLightbox(null)}>
       <button onClick={()=>setLightbox(null)} aria-label="Close"><X/></button>
